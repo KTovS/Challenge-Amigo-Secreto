@@ -1,0 +1,113 @@
+:root {                                /* Colores principales */
+    --color-bg: #d8d8e1;
+    --color-primary: #FF6B6B;
+    --color-secondary: #4ECDC4;
+    --color-text: #FFFFFF;
+    --color-button: #486cb4;
+    --color-success: #06D6A0;
+    --color-danger: #ef8247;
+}
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Estilo del cuerpo */
+body {
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: #2A2D43;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: var(--color-text);
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Sección del juego */
+.game-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Contenedor de botones */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+/* Estilos de los botones */
+.btn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #FFF;
+    text-align: center;
+}
+
+.add {
+    background-color: var(--color-success);
+}
+
+.add:hover {
+    background-color: #04A777;  /* Resaltar fondo del boton añadir */
+}
+
+.draw {
+    background-color: var(--color-button);
+}
+
+.draw:hover {
+    background-color: #8a6bdd;   /* Resaltar fondo del boton sortear */
+}
+
+.reset {
+    background-color: var(--color-danger);
+}
+
+.reset:hover {
+    background-color: #D62839; /* Resaltar fondo del boton reiniciar */
+}
+
+/* Campo de entrada */
+.input-name {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px;
+}
+
+/* Mensaje de alerta */
+.alerta {
+    color: var(--color-danger);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+

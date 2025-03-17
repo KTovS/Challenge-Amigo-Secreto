@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amigo Secreto</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1> Primer Challenge </h1> <br>
+            <h2> - Amigo Secreto - </h2>
+        </header>
+
+        <section class="game-section">
+            <!-- Botones alineados a la izquierda -->
+            <div class="controls">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <button class="btn add" onclick="agregarAmigo()">Añadir</button>
+                <button class="btn draw" onclick="sortearAmigos()">Sortear</button>
+                <button class="btn reset" onclick="reiniciarLista()">Reiniciar</button>
+                <p id="alerta" class="alerta"></p>
+            </div>
+
+            <!-- Lista de amigos alineado a la derecha -->
+            <div class="list-container">
+                <h2>Lista de Amigos</h2>
+                <ul id="listaAmigos" class="name-list"></ul>
+
+                <h2>Resultados</h2>
+                <ul id="resultado" class="result-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
